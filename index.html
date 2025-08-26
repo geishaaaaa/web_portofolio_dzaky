@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzaky - Design & Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="bg-animation"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Dzaky</div>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="switchLanguage('id')">ID</button>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-en="Home" data-id="Home">Home</a></li>
+                <li><a href="#about" data-en="About" data-id="About">About</a></li>
+                <li><a href="#portfolio" data-en="Portfolio" data-id="Portofolio">Portfolio</a></li>
+                <li><a href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-en="Hi, I'm Dzaky" data-id="Halo, Saya Dzaky">Hi, I'm Dzaky</h1>
+                <p class="subtitle" data-en="Design & Software Engineer" data-id="Desainer & Software Engineer">Design & Software Engineer</p>
+                <p class="location"><i class="bi bi-geo-alt-fill" style="color: #06B6D4;; font-size: 1.2em; margin-right: 0.5rem;"></i>Sidoarjo, Indonesia</p>
+                <p class="description" data-en="Creating beautiful digital experiences through innovative design and robust software solutions" data-id="Menciptakan pengalaman digital yang indah melalui desain inovatif dan solusi perangkat lunak yang kuat">Creating beautiful digital experiences through innovative design and robust software solutions</p>
+                <a href="#portfolio" class="cta-button" data-en="View My Work" data-id="Lihat Karya Saya">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-en="About Me" data-id="Tentang Saya">About Me</h2>
+                    <p class="bio" data-en="I'm a passionate designer and software engineer based in Sidoarjo, Indonesia. With expertise in both visual design and full-stack development, I bridge the gap between creativity and functionality." data-id="Saya adalah seorang desainer dan software engineer yang bersemangat dari Sidoarjo, Indonesia. Dengan keahlian dalam desain visual dan pengembangan full-stack, saya menjembatani kesenjangan antara kreativitas dan fungsionalitas.">I'm a passionate designer and software engineer based in Sidoarjo, Indonesia. With expertise in both visual design and full-stack development, I bridge the gap between creativity and functionality.</p>
+                    <p class="mission" data-en="My mission is to create digital solutions that not only look stunning but also provide exceptional user experiences and solve real-world problems." data-id="Misi saya adalah menciptakan solusi digital yang tidak hanya terlihat menakjubkan tetapi juga memberikan pengalaman pengguna yang luar biasa dan memecahkan masalah dunia nyata.">My mission is to create digital solutions that not only look stunning but also provide exceptional user experiences and solve real-world problems.</p>
+                </div>
+                <div class="portrait-container">
+                    <div class="portrait-photo">
+                        <!-- Replace this icon with <img src="your-photo.jpg" alt="
+                          Portrait"> but still doesn't have a good photo yet -->
+                       <img src="WhatsApp Image 2025-08-25 at 18.33.12.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="bi bi-palette" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="UI/UX Design" data-id="Desain UI/UX">UI/UX Design</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-code-slash" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="Frontend Dev" data-id="Frontend Dev">Frontend Dev</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-server" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="Backend Dev" data-id="Backend Dev">Backend Dev</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-phone" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="Mobile Apps" data-id="Aplikasi Mobile">Mobile Apps</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-rocket-takeoff" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="DevOps" data-id="DevOps">DevOps</h4>
+                    </div>
+                    <div class="skill-item">
+                        <i class="bi bi-brush" style="font-size: 2rem; color: var(--primary-color);"></i>
+                        <h4 data-en="Branding" data-id="Branding">Branding</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1.5rem; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;" data-en="Featured Projects" data-id="Proyek Unggulan">Featured Projects</h2>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="bi bi-paint-bucket" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="Brand Identity System" data-id="Sistem Identitas Brand">Brand Identity System</h3>
+                        <p class="project-desc" data-en="Complete brand identity design for a local startup, including logo, color palette, typography, and marketing materials." data-id="Desain identitas brand lengkap untuk startup lokal, termasuk logo, palet warna, tipografi, dan materi pemasaran.">Complete brand identity design for a local startup, including logo, color palette, typography, and marketing materials.</p>
+                        <div class="project-tags">
+                            <span class="tag">Adobe Creative Suite</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Brand Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="bi bi-house-door" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 data-en="Real Estate Portal" data-id="Portal Real Estate">Real Estate Portal</h3>
+                        <p class="project-desc" data-en="Modern real estate platform with advanced search filters, virtual tours, and integrated mapping system." data-id="Platform real estate modern dengan filter pencarian canggih, tur virtual, dan sistem pemetaan terintegrasi.">Modern real estate platform with advanced search filters, virtual tours, and integrated mapping system.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Google Maps API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 data-en="Let's Work Together" data-id="Mari Bekerja Sama">Let's Work Together</h2>
+                <p style="color: var(--text-secondary); font-size: 1.2rem;" class="contact-intro" data-en="Ready to bring your ideas to life? Let's discuss your next project!" data-id="Siap mewujudkan ide Anda? Mari diskusikan proyek selanjutnya!">Ready to bring your ideas to life? Let's discuss your next project!</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4 data-en="Email" data-id="Email">Email</h4>
+                        <p><a href="mailto:dzaky112407@gmail.com" target="_blank">dzaky112407@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-en="Phone" data-id="Telepon">Phone</h4>
+                        <p><a href="tel:+6289523597168" target="#blank">+62 8952 359 7168</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-en="Location" data-id="Lokasi">Location</h4>
+                        <p>Sidoarjo, Indonesia</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-en="Social" data-id="Sosial Media">Social</h4>
+                        <p><a href="https://instagram.com/eagn.w" target="_blank">@eagn.w</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
